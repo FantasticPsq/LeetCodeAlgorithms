@@ -39,7 +39,7 @@ public class TopKFrequent {
         }
         Queue<int[]> queue = new PriorityQueue<>(new Comparator<int[]>() {
             @Override
-            public int compare(int[] m,, int[] nm) {
+            public int compare(int[] m, int[] nm) {
                 return m[1] - nm[1];
             }
         });
