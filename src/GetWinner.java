@@ -1,3 +1,4 @@
+
 public class GetWinner {
     public static int getWinner(int[] arr, int k) {
         int cur_max = Math.max(arr[0], arr[1]);
@@ -16,13 +17,15 @@ public class GetWinner {
             } else {
                 cur_max = cur;
                 index = 1;
+
             }
-            max = Math.max(max,cur_max);
+            max = Math.max(max, cur_max);
         }
         return max;
     }
 
     public static void main(String[] args) {
-        getWinner(new int[]{2,1,3,5,4,6,7},2);
+        getWinner(new int[]{2, 1, 3, 5, 4, 6, 7}, 2);
     }
 }
+
